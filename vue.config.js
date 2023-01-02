@@ -7,5 +7,15 @@ module.exports = defineConfig({
         path: require.resolve('path-browserify')
       }
     }
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'https://mock.apifox.cn/m1/2147872-0-default',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' }
+      }
+    }
   }
 })

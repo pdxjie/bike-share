@@ -11,8 +11,11 @@ import {
   Radio,
   Modal,
   Notification,
+  Popconfirm,
+  Table,
   Divider
 } from 'ant-design-vue'
+Vue.use(Popconfirm)
 Vue.use(Button)
 Vue.use(Layout)
 Vue.use(Menu)
@@ -23,4 +26,5 @@ Vue.use(Card)
 Vue.use(Radio)
 Vue.use(Modal)
 Vue.use(Divider)
+Vue.use(Table)
 Vue.prototype.$notification = Notification
