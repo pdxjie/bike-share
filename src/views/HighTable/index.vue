@@ -30,7 +30,7 @@
       </a-table>
     </a-card>
     <a-card title="固定列" class="button-wrap">
-      <a-table :columns="fixedColumns" :data-source="data" :scroll="{ x: 1500,y: 240 }">
+      <a-table :columns="fixedColumns" :data-source="data" :scroll="{ x: 2000,y: 240 }">
         <template slot="sex" slot-scope="text, record">
           <span>{{sex[record.sex]}}</span>
         </template>

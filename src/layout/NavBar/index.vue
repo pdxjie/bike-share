@@ -9,6 +9,7 @@
         />
       </div>
       <div class="nav-right">
+        <ScreenFull class="full-screen"/>
         <iframe allowTransparency="true" frameBorder="0" width="180" height="36" scrolling="no"
                 src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=57083&w=180&h=36&align=center"/>
         <a-dropdown :trigger="['click']">
@@ -32,8 +33,10 @@
 </template>
 
 <script>
+import ScreenFull from '@/components/ScreenFull'
 export default {
   name: 'NavBar',
+  components: { ScreenFull },
   computed: {
     collapsed () {
       return this.$store.getters.collapsed
@@ -59,6 +62,10 @@ export default {
   .nav-right {
     display: flex;
     align-items: center;
+    justify-content: center;
+    .full-screen {
+      margin-top: 6px;
+    }
   }
 }
 </style>

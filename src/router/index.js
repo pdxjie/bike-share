@@ -102,7 +102,7 @@ const routes = [
         component: { render: h => h('router-view') },
         children: [
           {
-            path: 'bar',
+            path: '/charts/bar',
             meta: { title: '柱状图' },
             component: () => import('@/views/ChartsBar')
           },
