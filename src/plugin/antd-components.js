@@ -6,12 +6,17 @@ import {
   Menu,
   Icon,
   Avatar,
-  Dropdown
+  Dropdown,
+  Card,
+  Radio,
+  Modal
 } from 'ant-design-vue'
-
 Vue.use(Button)
 Vue.use(Layout)
 Vue.use(Menu)
 Vue.use(Icon)
 Vue.use(Avatar)
 Vue.use(Dropdown)
+Vue.use(Card)
+Vue.use(Radio)
+Vue.use(Modal)
