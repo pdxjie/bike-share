@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
+    <a-spin :spinning="$store.state.system.loading">
+      <router-view/>
+    </a-spin>
+
   </div>
 </template>
 

@@ -2,6 +2,7 @@
 <div>
   <a-card title="动态数据渲染" class="button-wrap">
     <a-table
+      :loading="$store.getters.loading"
       :rowKey="(record)=>{ return record.id}"
       :columns="normalColumns"
       :data-source="data"
@@ -91,8 +92,10 @@ export default {
   },
   methods: {
     async getTableList () {
+      this.$store.dispatch('system/setloadding', true)
       const result = await this.$store.dispatch('table/tableDataApi')
       this.data = result
+      this.$store.dispatch('system/setloadding', false)
     },
     onSelectChange (selectedRowKeys) {
       this.selectedRowKeys = selectedRowKeys

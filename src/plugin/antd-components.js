@@ -13,8 +13,10 @@ import {
   Notification,
   Popconfirm,
   Table,
-  Divider
+  Divider,
+  Spin
 } from 'ant-design-vue'
+Vue.use(Spin)
 Vue.use(Popconfirm)
 Vue.use(Button)
 Vue.use(Layout)
