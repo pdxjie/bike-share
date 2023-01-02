@@ -9,7 +9,9 @@ import {
   Dropdown,
   Card,
   Radio,
-  Modal
+  Modal,
+  Notification,
+  Divider
 } from 'ant-design-vue'
 Vue.use(Button)
 Vue.use(Layout)
@@ -20,3 +22,5 @@ Vue.use(Dropdown)
 Vue.use(Card)
 Vue.use(Radio)
 Vue.use(Modal)
+Vue.use(Divider)
+Vue.prototype.$notification = Notification

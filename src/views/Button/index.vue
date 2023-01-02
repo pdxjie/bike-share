@@ -73,13 +73,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
- .button-wrap {
-   margin-bottom: 10px;
-   button {
-     margin-right: 10px;
-   }
-   .circle {
-     border-radius: 50% !important;
-   }
- }
+.button-wrap {
+  margin-bottom: 10px;
+  button {
+    margin-right: 10px;
+  }
+  .circle {
+    border-radius: 50% !important;
+  }
+}
 </style>
