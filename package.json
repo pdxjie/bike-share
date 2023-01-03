@@ -12,6 +12,7 @@
     "axios": "^1.2.2",
     "core-js": "^3.8.3",
     "echarts": "^5.4.1",
+    "monent": "^0.0.2-security",
     "path-browserify": "^1.0.1",
     "screenfull": "^6.0.2",
     "vue": "^2.6.14",

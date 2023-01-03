@@ -16,8 +16,10 @@ import {
   Divider,
   Spin,
   Form,
-  Select
+  Select,
+  DatePicker
 } from 'ant-design-vue'
+Vue.use(DatePicker)
 Vue.use(Select)
 Vue.use(Form)
 Vue.use(Spin)

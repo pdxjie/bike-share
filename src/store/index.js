@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import system from '@/store/modules/system'
 import table from '@/store/modules/table'
 import city from '@/store/modules/city'
+import order from '@/store/modules/order'
 import getters from '@/store/getters'
 
 Vue.use(Vuex)
@@ -12,6 +13,7 @@ export default new Vuex.Store({
   modules: {
     system,
     table,
-    city
+    city,
+    order
   }
 })

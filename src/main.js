@@ -5,8 +5,8 @@ import store from './store'
 import './styles/common.css'
 import './plugin/antd-components'
 import '@/assets/fonts/iconfont.css'
-import * as echarts from 'echarts'
-Vue.prototype.$echarts = echarts // 引入编辑器
+import * as echarts from 'echarts' // 引入编辑器
+Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
 
 new Vue({

@@ -154,3 +154,66 @@ export const cityColumn = [
     align: 'center'
   }
 ]
+
+export const orderColumn = [
+  {
+    title: '订单编号',
+    dataIndex: 'orderId',
+    align: 'center',
+    scopedSlots: { customRender: 'orderId' }
+  },
+  {
+    title: '车辆编号',
+    dataIndex: 'carId',
+    align: 'center',
+    scopedSlots: { customRender: 'carId' }
+  },
+  {
+    title: '用户名',
+    dataIndex: 'userName',
+    align: 'center'
+  },
+  {
+    title: '手机号',
+    dataIndex: 'phone',
+    align: 'center'
+  },
+  {
+    title: '里程',
+    dataIndex: 'mileage',
+    align: 'center'
+  },
+  {
+    title: '行程时长',
+    dataIndex: 'time',
+    align: 'center'
+  },
+  {
+    title: '状态',
+    dataIndex: 'status',
+    align: 'center',
+    scopedSlots: { customRender: 'status' }
+  },
+  {
+    title: '开始时间',
+    dataIndex: 'beginTime',
+    align: 'center'
+  },
+  {
+    title: '结束时间',
+    dataIndex: 'endTime',
+    align: 'center'
+  },
+  {
+    title: '订单金额',
+    dataIndex: 'orderMoney',
+    align: 'center',
+    scopedSlots: { customRender: 'orderMoney' }
+  },
+  {
+    title: '实付金额',
+    dataIndex: 'orderedMoney',
+    align: 'center',
+    scopedSlots: { customRender: 'orderedMoney' }
+  }
+]

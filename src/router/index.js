@@ -159,6 +159,16 @@ const routes = [
     path: '*',
     hideInMenu: true,
     component: Error
+  },
+  {
+    path: '/order/detail',
+    hideInMenu: true,
+    component: () => import('@/views/OrderDetail')
+  },
+  {
+    path: '/order/finish',
+    hideInMenu: true,
+    component: () => import('@/views/OrderFinish')
   }
 ]
 
