@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '@/views/Login'
 import Error from '@/views/Error'
 import Admin from '@/layout/Admin'
+import Other from '@/Other'
 
 Vue.use(VueRouter)
 
@@ -161,14 +162,20 @@ const routes = [
     component: Error
   },
   {
-    path: '/order/detail',
-    hideInMenu: true,
-    component: () => import('@/views/OrderDetail')
-  },
-  {
-    path: '/order/finish',
-    hideInMenu: true,
-    component: () => import('@/views/OrderFinish')
+    path: '/other',
+    component: Other,
+    children: [
+      {
+        path: '/other/order/detail/:orderId',
+        hideInMenu: true,
+        component: () => import('@/views/OrderDetail')
+      },
+      {
+        path: '/other/order/finish',
+        hideInMenu: true,
+        component: () => import('@/views/OrderFinish')
+      }
+    ]
   }
 ]
 

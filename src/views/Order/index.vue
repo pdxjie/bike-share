@@ -4,7 +4,7 @@
       <SearchForm/>
     </a-card>
     <a-card class="card-wrap">
-      <a-button type="primary">订单详情</a-button>
+      <a-button type="primary" @click="openOrderDetail">订单详情</a-button>
       <a-button type="primary" @click="handleFinishOrder">结束订单</a-button>
       <a-table
         bordered
@@ -115,6 +115,13 @@ export default {
       result.beginTime = data[0].beginTime
       this.detailInfo = result
       this.orderConfirmVisible = true
+    },
+    openOrderDetail () {
+      if (this.selectedRowKeys.length === 0) {
+        message.error('请选择具体的订单项')
+        return
+      }
+      window.open(`/#/other/order/detail/${this.selectedRowKeys[0]}`, '_blank')
     }
   }
 }
