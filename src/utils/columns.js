@@ -104,3 +104,53 @@ export const fixedColumns = [
     scopedSlots: { customRender: 'action' }
   }
 ]
+export const cityColumn = [
+  {
+    title: '城市ID',
+    dataIndex: 'cityId',
+    align: 'center'
+  },
+  {
+    title: '城市名称',
+    dataIndex: 'cityName',
+    align: 'center'
+  },
+  {
+    title: '用车模式',
+    dataIndex: 'mode',
+    align: 'center',
+    scopedSlots: { customRender: 'mode' }
+  },
+  {
+    title: '运营模式',
+    dataIndex: 'opMode',
+    align: 'center',
+    scopedSlots: { customRender: 'opMode' }
+  },
+  {
+    title: '授权加盟商',
+    dataIndex: 'authStatusName',
+    align: 'center',
+    scopedSlots: { customRender: 'authStatusName' }
+  },
+  {
+    title: '城市管理员',
+    dataIndex: 'cityAdmin',
+    align: 'center'
+  },
+  {
+    title: '城市开通时间',
+    dataIndex: 'openTime',
+    align: 'center'
+  },
+  {
+    title: '操作时间',
+    dataIndex: 'actionTime',
+    align: 'center'
+  },
+  {
+    title: '操作人',
+    dataIndex: 'operator',
+    align: 'center'
+  }
+]

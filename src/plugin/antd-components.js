@@ -14,8 +14,12 @@ import {
   Popconfirm,
   Table,
   Divider,
-  Spin
+  Spin,
+  Form,
+  Select
 } from 'ant-design-vue'
+Vue.use(Select)
+Vue.use(Form)
 Vue.use(Spin)
 Vue.use(Popconfirm)
 Vue.use(Button)
