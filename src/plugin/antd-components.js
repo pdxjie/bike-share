@@ -17,8 +17,12 @@ import {
   Spin,
   Form,
   Select,
-  DatePicker
+  DatePicker,
+  Input,
+  Tag
 } from 'ant-design-vue'
+Vue.use(Tag)
+Vue.use(Input)
 Vue.use(DatePicker)
 Vue.use(Select)
 Vue.use(Form)

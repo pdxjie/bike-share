@@ -4,6 +4,7 @@ import system from '@/store/modules/system'
 import table from '@/store/modules/table'
 import city from '@/store/modules/city'
 import order from '@/store/modules/order'
+import user from '@/store/modules/user'
 import getters from '@/store/getters'
 
 Vue.use(Vuex)
@@ -14,6 +15,7 @@ export default new Vuex.Store({
     system,
     table,
     city,
-    order
+    order,
+    user
   }
 })

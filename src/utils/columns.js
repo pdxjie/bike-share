@@ -217,3 +217,71 @@ export const orderColumn = [
     scopedSlots: { customRender: 'orderedMoney' }
   }
 ]
+
+export const userColumn = [
+  {
+    title: 'Id',
+    dataIndex: 'userId',
+    width: 60,
+    align: 'center'
+  },
+  {
+    title: '用户名',
+    dataIndex: 'userName',
+    width: 80,
+    align: 'center'
+  },
+  {
+    title: '性别',
+    dataIndex: 'sex',
+    align: 'center',
+    width: 80,
+    scopedSlots: { customRender: 'sex' }
+  },
+  {
+    title: '用户状态',
+    dataIndex: 'status',
+    align: 'center',
+    width: 90,
+    scopedSlots: { customRender: 'status' }
+  },
+  {
+    title: '爱好',
+    dataIndex: 'hobby',
+    align: 'center',
+    width: 150,
+    scopedSlots: { customRender: 'hobby' }
+  },
+  {
+    title: '是否婚配',
+    dataIndex: 'isMarry',
+    align: 'center',
+    width: 90,
+    scopedSlots: { customRender: 'isMarry' }
+  },
+  {
+    title: '生日',
+    dataIndex: 'birthday',
+    width: 107,
+    align: 'center'
+  },
+  {
+    title: '家庭住址',
+    dataIndex: 'address',
+    width: 120,
+    align: 'center'
+  },
+  {
+    title: '入职时间',
+    dataIndex: 'workInTime',
+    width: 107,
+    align: 'center'
+  },
+  {
+    title: '操作',
+    dataIndex: 'action',
+    align: 'center',
+    width: 100,
+    scopedSlots: { customRender: 'action' }
+  }
+]
