@@ -116,12 +116,27 @@ export default {
       this.detailInfo = result
       this.orderConfirmVisible = true
     },
-    openOrderDetail () {
+    async openOrderDetail () {
       if (this.selectedRowKeys.length === 0) {
         message.error('请选择具体的订单项')
         return
       }
-      window.open(`/#/other/order/detail/${this.selectedRowKeys[0]}`, '_blank')
+      if (this.selectedRowKeys.length > 1) {
+        message.error('请确认选择其中一项订单')
+        return
+      }
+      const result = await this.$store.dispatch('order/OrderInfo')
+      const data = this.data.filter(item => {
+        return item.orderId === this.selectedRowKeys[0]
+      })
+      this.$router.push({
+        path: '/other/order/detail',
+        query: {
+          orderDetail: data[0],
+          orderInfo: result
+        }
+      })
+      // window.open(`/#/other/order/detail/${this.selectedRowKeys[0]}`, '_blank')
     }
   }
 }

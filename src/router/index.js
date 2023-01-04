@@ -166,7 +166,7 @@ const routes = [
     component: Other,
     children: [
       {
-        path: '/other/order/detail/:orderId',
+        path: '/other/order/detail',
         hideInMenu: true,
         component: () => import('@/views/OrderDetail')
       },

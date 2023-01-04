@@ -1,19 +1,26 @@
-import { getCarDetail, ordersApi } from '@/api/order'
+import { getCarDetail, ordersApi, OrderInfoApi } from '@/api/order'
 
-const state = {}
+const state = {
+  orders: []
+}
 
 const actions = {
-  async getOrderData () {
+  async getOrderData ({ commit }) {
     const { data: { result } } = await ordersApi()
     return result
   },
   async getCarDetail () {
     const { data: { result } } = await getCarDetail()
     return result
+  },
+  async OrderInfo () {
+    const { data: { result } } = await OrderInfoApi()
+    return result
   }
 }
 
-const mutations = {}
+const mutations = {
+}
 
 export default {
   state,

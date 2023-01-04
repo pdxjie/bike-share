@@ -4,19 +4,19 @@
                  :label-col="formItemLayout.labelCol"
                  :wrapper-col="formItemLayout.wrapperCol"
     >
-      北京
+      {{basicInfo.drivBegin}}
     </a-form-item>
     <a-form-item label="行程终点"
                  :label-col="formItemLayout.labelCol"
                  :wrapper-col="formItemLayout.wrapperCol"
     >
-      上海
+      {{basicInfo.drivEnd}}
     </a-form-item>
     <a-form-item label="行驶里程"
                  :label-col="formItemLayout.labelCol"
                  :wrapper-col="formItemLayout.wrapperCol"
     >
-      10公里
+      {{basicInfo.mileage}}公里
     </a-form-item>
   </a-form>
 </template>
@@ -24,6 +24,7 @@
 <script>
 export default {
   name: 'OrderDetailInfo',
+  props: ['basicInfo'],
   data () {
     return {
       formItemLayout: {

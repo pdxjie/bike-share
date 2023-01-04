@@ -13,3 +13,10 @@ export const getCarDetail = () => {
     method: 'get'
   })
 }
+
+export const OrderInfoApi = () => {
+  return instance({
+    url: '/mock/orderInfo/api',
+    method: 'get'
+  })
+}
