@@ -285,3 +285,38 @@ export const userColumn = [
     scopedSlots: { customRender: 'action' }
   }
 ]
+
+export const roleColumn = [
+  {
+    title: '角色ID',
+    dataIndex: 'id',
+    align: 'center'
+  },
+  {
+    title: '角色名称',
+    dataIndex: 'roleName',
+    align: 'center',
+    scopedSlots: { customRender: 'roleName' }
+  },
+  {
+    title: '创建时间',
+    dataIndex: 'createTime',
+    align: 'center'
+  },
+  {
+    title: '使用状态',
+    dataIndex: 'status',
+    align: 'center',
+    scopedSlots: { customRender: 'status' }
+  },
+  {
+    title: '授权时间',
+    dataIndex: 'authTime',
+    align: 'center'
+  },
+  {
+    title: '授权人',
+    dataIndex: 'authOne',
+    align: 'center'
+  }
+]
